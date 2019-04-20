@@ -265,6 +265,7 @@ GameObject:
   - component: {fileID: 68953848}
   - component: {fileID: 68953847}
   - component: {fileID: 68953846}
+  - component: {fileID: 68953849}
   m_Layer: 5
   m_Name: BtnUP
   m_TagString: Untagged
@@ -373,6 +374,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 68953844}
   m_CullTransparentMesh: 0
+--- !u!114 &68953849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 68953844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a1d65a06cb366644b050c4996dd4745, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ButtonScript: {fileID: 68953846}
+  TextScript: {fileID: 743181153}
+  Selection: {fileID: 2083188990}
 --- !u!1 &108302074
 GameObject:
   m_ObjectHideFlags: 0
@@ -2344,6 +2360,7 @@ GameObject:
   - component: {fileID: 732512564}
   - component: {fileID: 732512563}
   - component: {fileID: 732512562}
+  - component: {fileID: 732512565}
   m_Layer: 5
   m_Name: BtnDOWN
   m_TagString: Untagged
@@ -2452,6 +2469,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 732512560}
   m_CullTransparentMesh: 0
+--- !u!114 &732512565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 732512560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a1d65a06cb366644b050c4996dd4745, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ButtonScript: {fileID: 732512562}
+  TextScript: {fileID: 672566949}
+  Selection: {fileID: 688181677}
 --- !u!1 &743181151
 GameObject:
   m_ObjectHideFlags: 0
@@ -3295,6 +3327,7 @@ GameObject:
   - component: {fileID: 921968789}
   - component: {fileID: 921968788}
   - component: {fileID: 921968787}
+  - component: {fileID: 921968791}
   m_Layer: 5
   m_Name: BtnSTOP
   m_TagString: Untagged
@@ -3421,6 +3454,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 921968785}
   m_CullTransparentMesh: 0
+--- !u!114 &921968791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921968785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b24044db988ca2242a3540e9582fd4c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ButtonScript: {fileID: 921968788}
+  TextScript: {fileID: 1273000861}
+  Selection: {fileID: 0}
 --- !u!1001 &934424295
 PrefabInstance:
   m_ObjectHideFlags: 0
