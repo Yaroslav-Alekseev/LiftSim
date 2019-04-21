@@ -125,13 +125,11 @@ public class LiftController : MonoBehaviour
 
     private void OpenDoors()
     {
-        Debug.Log("Двери открываются!");
         DoorsText.text = "Двери\nоткрыты!";
     }
 
     private void CloseDoors()
     {
-        Debug.Log("Двери закрываются!");
         DoorsText.text = "Двери\nзакрыты!";
     }
 
