@@ -19,6 +19,7 @@ public class LiftController : MonoBehaviour
 {
 
     public Text LiftIndicator;
+    public Text DoorsText;
     public InputField PlayerOnFloor;
 
     public static LiftController Instance;
@@ -32,6 +33,7 @@ public class LiftController : MonoBehaviour
         Instance = this;
 
         _liftDirection = Direction.Stopped;
+        DoorsText.text = "Двери\nоткрыты!";
 
         _currentFloor = 1;
         LiftIndicator.text = "1";
@@ -124,11 +126,13 @@ public class LiftController : MonoBehaviour
     private void OpenDoors()
     {
         Debug.Log("Двери открываются!");
+        DoorsText.text = "Двери\nоткрыты!";
     }
 
     private void CloseDoors()
     {
         Debug.Log("Двери закрываются!");
+        DoorsText.text = "Двери\nзакрыты!";
     }
 
     private IEnumerator FloorCounter(int TargetFloor)
