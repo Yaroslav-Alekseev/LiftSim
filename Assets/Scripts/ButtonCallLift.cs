@@ -13,6 +13,8 @@ public class ButtonCallLift : ButtonBase, ISelectable
 
     private void Awake()
     {
+        AddToSelectablesList();
+
         UnityAction action;
         action = delegate
         {
@@ -25,10 +27,15 @@ public class ButtonCallLift : ButtonBase, ISelectable
         AddOnClick(action);
     }
 
+    private void OnDestroy()
+    {
+        RemoveFromSelectablesList();
+    }
+
 
     public void Select()
     {
-        Selection.SetActive(true);
+        SelectionController.SelectArrowButton(this);
     }
 
     public void DeSelect()
@@ -36,4 +43,13 @@ public class ButtonCallLift : ButtonBase, ISelectable
         Selection.SetActive(false);
     }
 
+    public void AddToSelectablesList()
+    {
+        SelectionController.AddArrowButton(this);
+    }
+
+    public void RemoveFromSelectablesList()
+    {
+        SelectionController.RemoveArrowButton(this);
+    }
 }

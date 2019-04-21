@@ -7,6 +7,8 @@ public class ButtonSetFloor : ButtonBase, ISelectable, IChangableText
 
     private void Awake()
     {
+        AddToSelectablesList();
+
         UnityAction action;
         action = delegate
         {
@@ -19,10 +21,15 @@ public class ButtonSetFloor : ButtonBase, ISelectable, IChangableText
         AddOnClick(action);
     }
 
+    private void OnDestroy()
+    {
+        RemoveFromSelectablesList();
+    }
+
 
     public void Select()
     {
-        Selection.SetActive(true);
+        SelectionController.SelectFloorButton(this);
     }
 
     public void DeSelect()
@@ -33,6 +40,16 @@ public class ButtonSetFloor : ButtonBase, ISelectable, IChangableText
     public void SetText(string NewText)
     {
         TextScript.text = NewText;
+    }
+
+    public void AddToSelectablesList()
+    {
+        SelectionController.AddFloorButton(this);
+    }
+
+    public void RemoveFromSelectablesList()
+    {
+        SelectionController.RemoveFloorButton(this);
     }
 
 }

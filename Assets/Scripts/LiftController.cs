@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -88,6 +87,10 @@ public class LiftController : MonoBehaviour
         {
             GoToFloor(Floor, NewDirection);
         }
+        else
+        {
+            SelectionController.DeselectAllArrows();
+        }
 
     }
 
@@ -111,6 +114,9 @@ public class LiftController : MonoBehaviour
     {
         StopAllCoroutines();
         _liftDirection = Direction.Stopped;
+
+        SelectionController.DeselectAllFloors();
+        SelectionController.DeselectAllArrows();
 
         OpenDoors();
     }
