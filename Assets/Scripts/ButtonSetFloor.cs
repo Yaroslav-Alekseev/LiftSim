@@ -1,10 +1,22 @@
-﻿
+﻿using UnityEngine;
+using UnityEngine.Events;
+
+
 public class ButtonSetFloor : ButtonBase, ISelectable, IChangableText
 {
 
     private void Awake()
     {
-        AddOnClick(action: Select);
+        UnityAction action;
+        action = delegate
+        {
+            Select();
+
+            int Floor = int.Parse(TextScript.text);
+            LiftController.Instance.SetNextFloor(Floor, Command.FromInside);
+        };
+
+        AddOnClick(action);
     }
 
 

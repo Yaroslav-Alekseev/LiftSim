@@ -389,6 +389,8 @@ MonoBehaviour:
   ButtonScript: {fileID: 68953846}
   TextScript: {fileID: 743181153}
   Selection: {fileID: 2083188990}
+  PlayerOnFloor: {fileID: 6342747}
+  CallDirection: 0
 --- !u!1 &108302074
 GameObject:
   m_ObjectHideFlags: 0
@@ -572,6 +574,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da7842f738055f34ca38e9fb3da578de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LiftIndicator: {fileID: 903791242}
+  PlayerOnFloor: {fileID: 6342747}
 --- !u!4 &182971016
 Transform:
   m_ObjectHideFlags: 0
@@ -2545,6 +2549,8 @@ MonoBehaviour:
   ButtonScript: {fileID: 732512562}
   TextScript: {fileID: 672566949}
   Selection: {fileID: 688181677}
+  PlayerOnFloor: {fileID: 6342747}
+  CallDirection: 1
 --- !u!1 &743181151
 GameObject:
   m_ObjectHideFlags: 0
